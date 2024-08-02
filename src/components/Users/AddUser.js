@@ -1,23 +1,23 @@
-import react from 'react';
+import React from "react";
+import Card from '../UI/Card';
+import './AddUser.css';
 
 const AddUser = () => {
   const addUserHandler = (event) => {
     event.preventDefault();
-};
+  };
 
-return(
-  <form onSubmit={addUserHandler}>
-    <div>
+  return (
+    <Card>
+    <form onSubmit={addUserHandler}>
       <label htmlFor="username">Username</label>
-      <input type="text" id="username" />
-    </div>
-    <div>
+      <input id="username" type="text" />
       <label htmlFor="age">Age</label>
-      <input type="number" id="age" />
-    </div>
-    <button type="submit">Add User</button>
+      <input id="age" type="number" />
+      <button type="submit">Add User</button>
     </form>
-);
+    </Card>
+  );
 };
 
-export default AddUser; 
+export default AddUser;
