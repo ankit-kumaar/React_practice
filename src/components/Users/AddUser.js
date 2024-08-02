@@ -8,7 +8,7 @@ const AddUser = () => {
   };
 
   return (
-    <Card>
+    <Card className="input">
     <form onSubmit={addUserHandler}>
       <label htmlFor="username">Username</label>
       <input id="username" type="text" />
